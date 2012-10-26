@@ -1,5 +1,7 @@
-require "hola/version"
-
-module Hola
-  # Your code goes here...
+require 'hola/translator'
+class Hola
+  def self.hi(language = :english)
+    translator = Translator.new(language)
+    translator.hi
+  end
 end

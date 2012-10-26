@@ -1,19 +1,11 @@
-# -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'hola/version'
-
-Gem::Specification.new do |gem|
-  gem.name          = "hola"
-  gem.version       = Hola::VERSION
-  gem.authors       = ["jstuby"]
-  gem.email         = ["john.stuby@gettyimgages.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
-
-  gem.files         = `git ls-files`.split($/)
-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.require_paths = ["lib"]
+Gem::Specification.new do |s|
+  s.name = 'hola'
+  s.version = '0.0.1'
+  s.executables << 'hola'
+  s.summary = "Hola!"
+  s.description = "A hello world gem that translates hello world to spanish"
+  s.author = "jstuby"
+  s.email = "john.stuby@gettyimages.com"
+  s.files = "lib/hola.rb"
+  s.homepage = "http://rubygems.org/gems/hola"
 end
